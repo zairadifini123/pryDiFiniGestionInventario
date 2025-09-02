@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbEditar = new Label();
             txtBuscar = new TextBox();
             lblBuscar = new Label();
-            this.cmbCategorias = new ComboBox();
             lblCategorias = new Label();
             dgvProductos = new DataGridView();
             Nombre = new DataGridViewTextBoxColumn();
@@ -45,19 +43,9 @@
             btnEliminar = new Button();
             btnReporte = new Button();
             btnSalir = new Button();
+            lblInicio = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             SuspendLayout();
-            // 
-            // lbEditar
-            // 
-            lbEditar.AutoSize = true;
-            lbEditar.BackColor = SystemColors.ButtonFace;
-            lbEditar.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbEditar.Location = new Point(54, 41);
-            lbEditar.Name = "lbEditar";
-            lbEditar.Size = new Size(728, 81);
-            lbEditar.TabIndex = 13;
-            lbEditar.Text = "Ingrese que quiere hacer";
             // 
             // txtBuscar
             // 
@@ -74,14 +62,6 @@
             lblBuscar.Size = new Size(117, 20);
             lblBuscar.TabIndex = 15;
             lblBuscar.Text = "Buscar producto";
-            // 
-            // cmbCategorias
-            // 
-            this.cmbCategorias.FormattingEnabled = true;
-            this.cmbCategorias.Location = new Point(599, 152);
-            this.cmbCategorias.Name = "cmbCategorias";
-            this.cmbCategorias.Size = new Size(151, 28);
-            this.cmbCategorias.TabIndex = 16;
             // 
             // lblCategorias
             // 
@@ -187,11 +167,23 @@
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             // 
+            // lblInicio
+            // 
+            lblInicio.AutoSize = true;
+            lblInicio.BackColor = SystemColors.ButtonFace;
+            lblInicio.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblInicio.Location = new Point(131, 34);
+            lblInicio.Name = "lblInicio";
+            lblInicio.Size = new Size(462, 81);
+            lblInicio.TabIndex = 24;
+            lblInicio.Text = "Elige que hacer";
+            // 
             // FrmInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(773, 386);
+            Controls.Add(lblInicio);
             Controls.Add(btnSalir);
             Controls.Add(btnReporte);
             Controls.Add(btnEliminar);
@@ -199,10 +191,8 @@
             Controls.Add(btnAgregar);
             Controls.Add(dgvProductos);
             Controls.Add(lblCategorias);
-            Controls.Add(this.cmbCategorias);
             Controls.Add(lblBuscar);
             Controls.Add(txtBuscar);
-            Controls.Add(lbEditar);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FrmInicio";
             Text = "Inicio";
@@ -235,5 +225,6 @@
         private Button btnEliminar;
         private Button btnReporte;
         private Button btnSalir;
+        private Label lblInicio;
     }
 }

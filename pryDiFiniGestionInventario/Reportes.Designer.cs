@@ -41,7 +41,7 @@
             lblReporte.AutoSize = true;
             lblReporte.BackColor = SystemColors.ButtonFace;
             lblReporte.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblReporte.Location = new Point(70, 9);
+            lblReporte.Location = new Point(62, 9);
             lblReporte.Name = "lblReporte";
             lblReporte.Size = new Size(649, 81);
             lblReporte.TabIndex = 14;
@@ -55,6 +55,7 @@
             btnCerrar.TabIndex = 16;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // dgvStock
             // 
