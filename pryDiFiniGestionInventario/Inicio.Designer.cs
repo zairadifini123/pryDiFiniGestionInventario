@@ -28,73 +28,185 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnEditar = new Button();
-            btnBuscar = new Button();
-            btnReportes = new Button();
-            btnStock = new Button();
             lbEditar = new Label();
+            txtBuscar = new TextBox();
+            lblBuscar = new Label();
+            this.cmbCategorias = new ComboBox();
+            lblCategorias = new Label();
+            dgvProductos = new DataGridView();
+            Nombre = new DataGridViewTextBoxColumn();
+            Codigo = new DataGridViewTextBoxColumn();
+            Descripcion = new DataGridViewTextBoxColumn();
+            Precio = new DataGridViewTextBoxColumn();
+            Stock = new DataGridViewTextBoxColumn();
+            Categoria = new DataGridViewTextBoxColumn();
+            btnAgregar = new Button();
+            btnModificar = new Button();
+            btnEliminar = new Button();
+            btnReporte = new Button();
+            btnSalir = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             SuspendLayout();
-            // 
-            // btnEditar
-            // 
-            btnEditar.Location = new Point(154, 115);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(109, 23);
-            btnEditar.TabIndex = 5;
-            btnEditar.Text = "Editar Producto";
-            btnEditar.UseVisualStyleBackColor = true;
-            btnEditar.Click += btnAgregar_Click;
-            // 
-            // btnBuscar
-            // 
-            btnBuscar.Location = new Point(269, 115);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(75, 23);
-            btnBuscar.TabIndex = 8;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // btnReportes
-            // 
-            btnReportes.Location = new Point(350, 115);
-            btnReportes.Name = "btnReportes";
-            btnReportes.Size = new Size(75, 23);
-            btnReportes.TabIndex = 9;
-            btnReportes.Text = "Reportes";
-            btnReportes.UseVisualStyleBackColor = true;
-            // 
-            // btnStock
-            // 
-            btnStock.Location = new Point(431, 115);
-            btnStock.Name = "btnStock";
-            btnStock.Size = new Size(75, 23);
-            btnStock.TabIndex = 10;
-            btnStock.Text = "Stock";
-            btnStock.UseVisualStyleBackColor = true;
             // 
             // lbEditar
             // 
             lbEditar.AutoSize = true;
             lbEditar.BackColor = SystemColors.ButtonFace;
             lbEditar.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbEditar.Location = new Point(47, 31);
+            lbEditar.Location = new Point(54, 41);
             lbEditar.Name = "lbEditar";
-            lbEditar.Size = new Size(585, 65);
+            lbEditar.Size = new Size(728, 81);
             lbEditar.TabIndex = 13;
             lbEditar.Text = "Ingrese que quiere hacer";
             // 
+            // txtBuscar
+            // 
+            txtBuscar.Location = new Point(213, 152);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(228, 27);
+            txtBuscar.TabIndex = 14;
+            // 
+            // lblBuscar
+            // 
+            lblBuscar.AutoSize = true;
+            lblBuscar.Location = new Point(90, 152);
+            lblBuscar.Name = "lblBuscar";
+            lblBuscar.Size = new Size(117, 20);
+            lblBuscar.TabIndex = 15;
+            lblBuscar.Text = "Buscar producto";
+            // 
+            // cmbCategorias
+            // 
+            this.cmbCategorias.FormattingEnabled = true;
+            this.cmbCategorias.Location = new Point(599, 152);
+            this.cmbCategorias.Name = "cmbCategorias";
+            this.cmbCategorias.Size = new Size(151, 28);
+            this.cmbCategorias.TabIndex = 16;
+            // 
+            // lblCategorias
+            // 
+            lblCategorias.AutoSize = true;
+            lblCategorias.Location = new Point(447, 155);
+            lblCategorias.Name = "lblCategorias";
+            lblCategorias.Size = new Size(146, 20);
+            lblCategorias.TabIndex = 17;
+            lblCategorias.Text = "Buscar por categoria";
+            // 
+            // dgvProductos
+            // 
+            dgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProductos.Columns.AddRange(new DataGridViewColumn[] { Nombre, Codigo, Descripcion, Precio, Stock, Categoria });
+            dgvProductos.Location = new Point(26, 201);
+            dgvProductos.Name = "dgvProductos";
+            dgvProductos.RowHeadersWidth = 51;
+            dgvProductos.Size = new Size(621, 64);
+            dgvProductos.TabIndex = 18;
+            // 
+            // Nombre
+            // 
+            Nombre.HeaderText = "Nombre";
+            Nombre.MinimumWidth = 6;
+            Nombre.Name = "Nombre";
+            // 
+            // Codigo
+            // 
+            Codigo.HeaderText = "Codigo";
+            Codigo.MinimumWidth = 6;
+            Codigo.Name = "Codigo";
+            // 
+            // Descripcion
+            // 
+            Descripcion.HeaderText = "Descripcion";
+            Descripcion.MinimumWidth = 6;
+            Descripcion.Name = "Descripcion";
+            // 
+            // Precio
+            // 
+            Precio.HeaderText = "Precio";
+            Precio.MinimumWidth = 6;
+            Precio.Name = "Precio";
+            // 
+            // Stock
+            // 
+            Stock.HeaderText = "Stock";
+            Stock.MinimumWidth = 6;
+            Stock.Name = "Stock";
+            // 
+            // Categoria
+            // 
+            Categoria.HeaderText = "Categoria";
+            Categoria.MinimumWidth = 6;
+            Categoria.Name = "Categoria";
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Location = new Point(656, 201);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(94, 29);
+            btnAgregar.TabIndex = 19;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click_1;
+            // 
+            // btnModificar
+            // 
+            btnModificar.Location = new Point(656, 236);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(94, 29);
+            btnModificar.TabIndex = 20;
+            btnModificar.Text = "Modificar";
+            btnModificar.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.Location = new Point(656, 271);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(94, 29);
+            btnEliminar.TabIndex = 21;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnReporte
+            // 
+            btnReporte.BackColor = Color.Cyan;
+            btnReporte.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnReporte.Location = new Point(213, 280);
+            btnReporte.Name = "btnReporte";
+            btnReporte.Size = new Size(192, 44);
+            btnReporte.TabIndex = 22;
+            btnReporte.Text = "Hacer Reporte";
+            btnReporte.UseVisualStyleBackColor = false;
+            // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(430, 292);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 23;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            // 
             // FrmInicio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(676, 233);
+            ClientSize = new Size(773, 386);
+            Controls.Add(btnSalir);
+            Controls.Add(btnReporte);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnModificar);
+            Controls.Add(btnAgregar);
+            Controls.Add(dgvProductos);
+            Controls.Add(lblCategorias);
+            Controls.Add(this.cmbCategorias);
+            Controls.Add(lblBuscar);
+            Controls.Add(txtBuscar);
             Controls.Add(lbEditar);
-            Controls.Add(btnStock);
-            Controls.Add(btnReportes);
-            Controls.Add(btnBuscar);
-            Controls.Add(btnEditar);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmInicio";
             Text = "Inicio";
+            ((System.ComponentModel.ISupportInitialize)dgvProductos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -104,11 +216,24 @@
         private ComboBox comboBox1;
         private Label lblTexto;
         private TextBox txtProducto;
-        private Button btnEditar;
         private Button btnBuscar;
         private Button btnReportes;
         private Button btnStock;
         private Label lbEditar;
-        private Label label1;
+        private Label lblBuscar;
+        private TextBox txtBuscar;
+        private Label lblCategorias;
+        private DataGridView dgvProductos;
+        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn Codigo;
+        private DataGridViewTextBoxColumn Descripcion;
+        private DataGridViewTextBoxColumn Precio;
+        private DataGridViewTextBoxColumn Stock;
+        private DataGridViewTextBoxColumn Categoria;
+        private Button btnAgregar;
+        private Button btnModificar;
+        private Button btnEliminar;
+        private Button btnReporte;
+        private Button btnSalir;
     }
 }

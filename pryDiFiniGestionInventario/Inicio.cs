@@ -16,5 +16,20 @@ namespace pryDiFiniGestionInventario
         {
 
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

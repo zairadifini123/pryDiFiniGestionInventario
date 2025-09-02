@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace pryDiFiniGestionInventario
 {
-    public partial class frmEditarProducto : Form
+    public partial class Reportes : Form
     {
-        public frmEditarProducto()
+        public Reportes()
         {
             InitializeComponent();
         }
 
-        private void EditarProducto_Load(object sender, EventArgs e)
+        private void Reportes_Load(object sender, EventArgs e)
         {
 
         }
