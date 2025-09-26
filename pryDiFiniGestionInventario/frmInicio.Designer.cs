@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             txtBuscar = new TextBox();
             lblBuscar = new Label();
             lblCategorias = new Label();
@@ -49,26 +50,27 @@
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(213, 152);
+            txtBuscar.Location = new Point(186, 114);
+            txtBuscar.Margin = new Padding(3, 2, 3, 2);
             txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(228, 27);
+            txtBuscar.Size = new Size(200, 23);
             txtBuscar.TabIndex = 14;
             // 
             // lblBuscar
             // 
             lblBuscar.AutoSize = true;
-            lblBuscar.Location = new Point(90, 152);
+            lblBuscar.Location = new Point(79, 114);
             lblBuscar.Name = "lblBuscar";
-            lblBuscar.Size = new Size(117, 20);
+            lblBuscar.Size = new Size(94, 15);
             lblBuscar.TabIndex = 15;
             lblBuscar.Text = "Buscar producto";
             // 
             // lblCategorias
             // 
             lblCategorias.AutoSize = true;
-            lblCategorias.Location = new Point(447, 155);
+            lblCategorias.Location = new Point(391, 116);
             lblCategorias.Name = "lblCategorias";
-            lblCategorias.Size = new Size(146, 20);
+            lblCategorias.Size = new Size(115, 15);
             lblCategorias.TabIndex = 17;
             lblCategorias.Text = "Buscar por categoria";
             // 
@@ -77,10 +79,11 @@
             dgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProductos.Columns.AddRange(new DataGridViewColumn[] { Nombre, Codigo, Descripcion, Precio, Stock, Categoria });
-            dgvProductos.Location = new Point(26, 201);
+            dgvProductos.Location = new Point(23, 151);
+            dgvProductos.Margin = new Padding(3, 2, 3, 2);
             dgvProductos.Name = "dgvProductos";
             dgvProductos.RowHeadersWidth = 51;
-            dgvProductos.Size = new Size(621, 64);
+            dgvProductos.Size = new Size(543, 48);
             dgvProductos.TabIndex = 18;
             // 
             // Nombre
@@ -121,9 +124,10 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(656, 201);
+            btnAgregar.Location = new Point(574, 151);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(94, 29);
+            btnAgregar.Size = new Size(82, 22);
             btnAgregar.TabIndex = 19;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -131,18 +135,20 @@
             // 
             // btnModificar
             // 
-            btnModificar.Location = new Point(656, 236);
+            btnModificar.Location = new Point(574, 177);
+            btnModificar.Margin = new Padding(3, 2, 3, 2);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(94, 29);
+            btnModificar.Size = new Size(82, 22);
             btnModificar.TabIndex = 20;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(656, 271);
+            btnEliminar.Location = new Point(574, 203);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(94, 29);
+            btnEliminar.Size = new Size(82, 22);
             btnEliminar.TabIndex = 21;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -151,18 +157,20 @@
             // 
             btnReporte.BackColor = Color.Cyan;
             btnReporte.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnReporte.Location = new Point(213, 280);
+            btnReporte.Location = new Point(186, 210);
+            btnReporte.Margin = new Padding(3, 2, 3, 2);
             btnReporte.Name = "btnReporte";
-            btnReporte.Size = new Size(192, 44);
+            btnReporte.Size = new Size(168, 33);
             btnReporte.TabIndex = 22;
             btnReporte.Text = "Hacer Reporte";
             btnReporte.UseVisualStyleBackColor = false;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(430, 292);
+            btnSalir.Location = new Point(376, 219);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(94, 29);
+            btnSalir.Size = new Size(82, 22);
             btnSalir.TabIndex = 23;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -172,17 +180,17 @@
             lblInicio.AutoSize = true;
             lblInicio.BackColor = SystemColors.ButtonFace;
             lblInicio.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblInicio.Location = new Point(131, 34);
+            lblInicio.Location = new Point(115, 26);
             lblInicio.Name = "lblInicio";
-            lblInicio.Size = new Size(462, 81);
+            lblInicio.Size = new Size(372, 65);
             lblInicio.TabIndex = 24;
             lblInicio.Text = "Elige que hacer";
             // 
             // FrmInicio
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(773, 386);
+            ClientSize = new Size(676, 290);
             Controls.Add(lblInicio);
             Controls.Add(btnSalir);
             Controls.Add(btnReporte);
@@ -193,8 +201,9 @@
             Controls.Add(lblCategorias);
             Controls.Add(lblBuscar);
             Controls.Add(txtBuscar);
-            Margin = new Padding(3, 4, 3, 4);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio";
             ((System.ComponentModel.ISupportInitialize)dgvProductos).EndInit();
             ResumeLayout(false);

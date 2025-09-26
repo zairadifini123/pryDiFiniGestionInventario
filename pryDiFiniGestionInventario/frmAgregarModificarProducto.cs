@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryDiFiniGestionInventario
 {
-    public partial class AgregarModificarProducto : Form
+    public partial class frmAgregarModificarProducto : Form
     {
-        public AgregarModificarProducto()
+        public frmAgregarModificarProducto()
         {
             InitializeComponent();
         }
