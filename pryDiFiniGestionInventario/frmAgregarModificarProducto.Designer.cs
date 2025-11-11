@@ -48,7 +48,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(588, 121);
+            textBox2.Location = new Point(106, 231);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 32;
@@ -56,7 +56,7 @@
             // lblStock
             // 
             lblStock.AutoSize = true;
-            lblStock.Location = new Point(494, 124);
+            lblStock.Location = new Point(12, 234);
             lblStock.Name = "lblStock";
             lblStock.Size = new Size(88, 15);
             lblStock.TabIndex = 31;
@@ -64,7 +64,7 @@
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(373, 121);
+            txtPrecio.Location = new Point(110, 157);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(100, 23);
             txtPrecio.TabIndex = 30;
@@ -72,7 +72,7 @@
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
-            lblPrecio.Location = new Point(275, 124);
+            lblPrecio.Location = new Point(12, 160);
             lblPrecio.Name = "lblPrecio";
             lblPrecio.Size = new Size(92, 15);
             lblPrecio.TabIndex = 29;
@@ -80,7 +80,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(397, 79);
+            textBox1.Location = new Point(140, 121);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 28;
@@ -88,7 +88,7 @@
             // lblDescripcion
             // 
             lblDescripcion.AutoSize = true;
-            lblDescripcion.Location = new Point(260, 83);
+            lblDescripcion.Location = new Point(12, 121);
             lblDescripcion.Name = "lblDescripcion";
             lblDescripcion.Size = new Size(121, 15);
             lblDescripcion.TabIndex = 27;
@@ -96,7 +96,7 @@
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(154, 121);
+            txtCodigo.Location = new Point(116, 85);
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(100, 23);
             txtCodigo.TabIndex = 26;
@@ -104,7 +104,7 @@
             // lblCodigo
             // 
             lblCodigo.AutoSize = true;
-            lblCodigo.Location = new Point(46, 124);
+            lblCodigo.Location = new Point(12, 88);
             lblCodigo.Name = "lblCodigo";
             lblCodigo.Size = new Size(98, 15);
             lblCodigo.TabIndex = 25;
@@ -112,7 +112,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(146, 79);
+            txtNombre.Location = new Point(116, 49);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(100, 23);
             txtNombre.TabIndex = 24;
@@ -120,7 +120,7 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(37, 83);
+            lblNombre.Location = new Point(13, 53);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(103, 15);
             lblNombre.TabIndex = 23;
@@ -128,20 +128,20 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(206, 171);
+            btnGuardar.Location = new Point(139, 279);
             btnGuardar.Margin = new Padding(3, 2, 3, 2);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(125, 24);
+            btnGuardar.Size = new Size(108, 24);
             btnGuardar.TabIndex = 33;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(377, 171);
+            btnCancelar.Location = new Point(13, 279);
             btnCancelar.Margin = new Padding(3, 2, 3, 2);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(125, 24);
+            btnCancelar.Size = new Size(107, 24);
             btnCancelar.TabIndex = 34;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@
             lblAgregarModificar.AutoSize = true;
             lblAgregarModificar.BackColor = SystemColors.ButtonFace;
             lblAgregarModificar.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAgregarModificar.Location = new Point(46, 18);
+            lblAgregarModificar.Location = new Point(12, 9);
             lblAgregarModificar.Name = "lblAgregarModificar";
             lblAgregarModificar.Size = new Size(385, 37);
             lblAgregarModificar.TabIndex = 35;
@@ -160,7 +160,7 @@
             // lblCategorias
             // 
             lblCategorias.AutoSize = true;
-            lblCategorias.Location = new Point(520, 83);
+            lblCategorias.Location = new Point(12, 197);
             lblCategorias.Name = "lblCategorias";
             lblCategorias.Size = new Size(63, 15);
             lblCategorias.TabIndex = 36;
@@ -169,7 +169,7 @@
             // cmbCategorias
             // 
             cmbCategorias.FormattingEnabled = true;
-            cmbCategorias.Location = new Point(593, 81);
+            cmbCategorias.Location = new Point(81, 194);
             cmbCategorias.Margin = new Padding(3, 2, 3, 2);
             cmbCategorias.Name = "cmbCategorias";
             cmbCategorias.Size = new Size(97, 23);
@@ -179,7 +179,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 242);
+            ClientSize = new Size(401, 333);
             Controls.Add(cmbCategorias);
             Controls.Add(lblCategorias);
             Controls.Add(lblAgregarModificar);
